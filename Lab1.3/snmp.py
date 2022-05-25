@@ -9,8 +9,8 @@ snmp_objetc_interface = ObjectIdentity('1.3.6.1.2.1.2.2.1.2')
 
 
 resultGet = getCmd(SnmpEngine(),
-           CommunityData('public', mpModel=0),
-           UdpTransportTarget(('10.31.70.107', 161)),
+           community_data,
+           transport,
            ContextData(),
            ObjectType(snmp_object_version))
 
